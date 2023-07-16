@@ -69,23 +69,91 @@ cursor: pointer;
     margin-top: 20px
 }
 /** responsive **/
+
+
+
+
+
+
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.tems-container{
+
+}
+
+/** tems container*/
+.tems-container{
+    display: flex;
+    align-items: center;
+}
+.tems-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.3rem;
+}
+.tems-content{
+    padding-left:70px ;
+    padding-right: 70px;
+}
+.tems-descreption{
+
+}
+.tems-title{
+    font-size: 2.8rem;
+}
+
+
+
 @media screen and (max-width:576px) {
     header{
         padding:20px;
     }
-    nav{
+    nav , .tems-container{
         flex-direction: column;
     }
     ul{
         margin-top: 20px;
     }
+    .tems-img-container{
+        grid-template-columns: 1fr;
+    }
+    .tems-container{
+        padding-left:0px ;
+        padding-right: 0px;
+    }
+   
+}
+/** FAcs container **/
+.fatcs-card-cobtainer .card{
+    border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 30px;
+}
+.fatcs-card-cobtainer{
+    display: flex;
+    justify-content: space-around;
+}
+.fatcs-card-cobtainer .card-starts{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fatcs-card-cobtainer .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
 }
 /** Tab device **/
 @media screen and (min-width:576px) and (max-width:976px){
     header{
         padding:50px;
     }
-    nav{
+    nav {
         flex-direction: column;
     }
     ul{
